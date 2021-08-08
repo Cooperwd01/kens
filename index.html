@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ken's Sunrise - Chinese Takeaway - Chester-le-Street</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="shortcut icon" href="{{ baseUrl }}assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ baseUrl }}assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="{{ baseUrl }}assets/favicon.svg" color="#005eb8">
+    <link rel="icon" sizes="192x192" href="{{ baseUrl }}assets/favicon-192x192.png">
+    <meta name="msapplication-TileImage" content="{{ baseUrl }}assets/mediumtile-144x144.png">
+    <meta name="msapplication-TileColor" content="#005eb8">
+    <meta name="msapplication-square70x70logo" content="{{ baseUrl }}assets/smalltile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="{{ baseUrl }}assets/mediumtile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="{{ baseUrl }}assets/favicons/widetile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="{{ baseUrl }}assets/favicons/largetile-310x310.png">
+
+    <meta property="og:url" content="https://nhsuk.github.io/nhsuk-frontend/">
+    <meta property="og:title" content="NHS.UK frontend library">
+    <meta property="og:description" content="Code you need to start building accessible user interfaces for NHS websites and services.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ baseUrl }}assets/logos/open-graph.png">
+    <meta property="og:image:alt" content="NHS"> -->
+
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nhsuk">
+    <meta name="twitter:creator" content="@nhsuk"> -->
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+      <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Ken's Sunrise Takeaway</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Opening Hours</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="content">
+      <div class="container">
+        <div class="col-12">
+          <h1>Ken's Sunrise Chinese Takeaway
+            <small class="text-muted">Chester-le-Street</small>
+          </h1>
+        </div>
+      </div>
+      <section id="menu" name="menu" style="background-color: transparent;">
+        <div class="container mt-5 mb-5">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Menu</h2>
+            </div>
+          </div>
+          <div id="menu-list" class="row mt-3 mt-3 mb-5">
+            <div id="mushroom-dish" class="col-12 col-md-4 mt-3 mb-3">
+              <h3>Mushroom Dishes</h3>
+              <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+              <ul>
+                <li class="dish-name">Chicken & English Mushrooms<span id="price">&pound;6.50</span></li>
+                <li class="dish-name">Prawns & English Mushrooms<span id="price">&pound;6.50</span></li>
+                <li class="dish-name">Char Siu Pork & English Mushrooms<span id="price">&pound;6.50</span></li>
+                <li class="dish-name">Beef & English Mushrooms<span id="price">&pound;6.50</span></li>
+                <li class="dish-name">King Prawns & English Mushrooms<span id="price">&pound;6.80</span></li>
+                <li class="dish-name">King Prawns, Chicken & English Mushrooms<span id="price">&pound;6.80</span></li>
+                <li class="dish-name">Beef, Chicken & English Mushrooms<span id="price">&pound;6.80</span></li>
+                <li class="dish-name">King Prawns & Char Siu Mushrooms<span id="price">&pound;6.80</span></li>
+              </ul>
+            </div>
+
+            <div id="chilli-bean-dish" class="col-12 col-md-4 mt-3 mb-3">
+              <h3>Hot Chilli Bean Sauce Dishes</h3>
+              <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+              <ul>
+                <li class="dish-name">Special with Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
+                <li class="dish-name">King Prawns & Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
+                <li class="dish-name">King Prawns, Chicken & Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
+                <li class="dish-name">Chicken, Char Siu & Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
+                <li class="dish-name">Chicken & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
+                <li class="dish-name">Beef & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
+                <li class="dish-name">Char Siu & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
+                <li class="dish-name">Prawns & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
