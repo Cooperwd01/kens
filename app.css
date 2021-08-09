@@ -7,11 +7,93 @@ red - #a5243d;
 black - #080f0f;
 
 */ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&family=Roboto&display=swap');
 
 html {
+  background-color: #a5243d;
+  color: #080f0f;
+  font-family: 'Open Sans', sans-serif;
+}
+main {
   background-color: #edebd7;
 }
-
 body {
   background-color: transparent;
+}
+h1 {
+  color: #a5243d;
+}
+#hero-title{
+  background-color: rgb(255, 255, 255, 0.8);
+  padding:10px;
+}
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color:#a5243d;
+}
+.price {
+  margin-left: 5px;
+  font-weight: 800;
+  float: right;
+}
+.bg-red {
+  background-color: #a5243d;
+  color: #fff;
+}
+.navbar-light .navbar-brand {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:#fff;
+}
+.secondary-text {
+  display:block;
+  font-size: 1.25rem;
+}
+
+.dish-container {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 15px
+}
+.dish-container > ul {
+  padding-left: 0px;
+}
+.dish-name{
+  border-bottom: 1px solid silver;
+  list-style: none;
+  padding: 10px 0px;
+}
+.dish-name:last-child{
+  border-bottom:none;
+}
+.dish-item {
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  word-break: break-word;
+}
+.footer-style{
+  background-color:#a5243d;
+  border-top:5px solid #080f0f;
+  color: #edebd7;
+}
+a.ftr-underline-animation.ftr-link {
+  color: #edebd7;
+}
+.icon-style{
+  padding-right:10px;
+}
+.hero-img{
+  background-image: url(/images/hero-img-min.jpg);
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+@media only screen and (max-width:767px) {
+  .hero-img{
+    height: 300px; 
+  }
 }

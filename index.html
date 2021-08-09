@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/app.css">
+
+    <script src="https://kit.fontawesome.com/f3cb83d5dd.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -45,16 +47,16 @@
     <![endif]-->
     <header>
       <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Ken's Sunrise Takeaway</span>
+      <nav class="navbar navbar-expand-lg bg-red navbar-light">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1"><i class="icon-style fas fa-utensils"></i>Ken's Sunrise Takeaway</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -67,56 +69,390 @@
         </div>
       </nav>
     </header>
-    <main id="content">
-      <div class="container">
-        <div class="col-12">
-          <h1>Ken's Sunrise Chinese Takeaway
-            <small class="text-muted">Chester-le-Street</small>
+    <main id="content" class="pb-3">
+      <div class="hero-img jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 id="hero-title" class="text-center">Ken's Sunrise Chinese Takeaway
+            <small class="secondary-text text-muted">Chester-le-Street</small>
           </h1>
         </div>
       </div>
+      <div class="container mt-5 mb-5">
+        
+        <div class="col-12">
+          
+        </div>
+      </div>
       <section id="menu" name="menu" style="background-color: transparent;">
-        <div class="container mt-5 mb-5">
+        <div class="container mt-3 mb-3">
           <div class="row">
             <div class="col-md-8">
               <h2>Menu</h2>
             </div>
           </div>
-          <div id="menu-list" class="row mt-3 mt-3 mb-5">
-            <div id="mushroom-dish" class="col-12 col-md-4 mt-3 mb-3">
-              <h3>Mushroom Dishes</h3>
-              <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
-              <ul>
-                <li class="dish-name">Chicken & English Mushrooms<span id="price">&pound;6.50</span></li>
-                <li class="dish-name">Prawns & English Mushrooms<span id="price">&pound;6.50</span></li>
-                <li class="dish-name">Char Siu Pork & English Mushrooms<span id="price">&pound;6.50</span></li>
-                <li class="dish-name">Beef & English Mushrooms<span id="price">&pound;6.50</span></li>
-                <li class="dish-name">King Prawns & English Mushrooms<span id="price">&pound;6.80</span></li>
-                <li class="dish-name">King Prawns, Chicken & English Mushrooms<span id="price">&pound;6.80</span></li>
-                <li class="dish-name">Beef, Chicken & English Mushrooms<span id="price">&pound;6.80</span></li>
-                <li class="dish-name">King Prawns & Char Siu Mushrooms<span id="price">&pound;6.80</span></li>
-              </ul>
+          <div id="menu-list" class="row mt-0 mb-5">
+
+            <div id="extra-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Starters</h3>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Chicken & Sweet Corn Soup</span><span class="price">&pound;2.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Cocktail Spring Rolls</span><span class="price">&pound;2.50</span></li>
+                  <li class="dish-name"><span class="dish-item">BBQ Spare Ribs</span><span class="price">&pound;5.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Spare Ribs with Peking Sauce</span><span class="price">&pound;5.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Spicy Salt & Pepper Spare Ribs</span><span class="price">&pound;5.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Spicy Salt & Pepper Chicken</span><span class="price">&pound;5.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Spicy Salt & Pepper King Prawn</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Spicy Salt & Pepper Chips</span><span class="price">&pound;3.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Sweet & Sour Sauce, Chips, Egg Fried Rice</span><span class="price">&pound;3.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Curry & Chips, Egg Fried Rice</span><span class="price">&pound;3.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Gravy & Chips, Egg Fried Rice</span><span class="price">&pound;3.50</span></li>
+                </ul>
+              </div>
             </div>
 
-            <div id="chilli-bean-dish" class="col-12 col-md-4 mt-3 mb-3">
-              <h3>Hot Chilli Bean Sauce Dishes</h3>
-              <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
-              <ul>
-                <li class="dish-name">Special with Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
-                <li class="dish-name">King Prawns & Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
-                <li class="dish-name">King Prawns, Chicken & Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
-                <li class="dish-name">Chicken, Char Siu & Chilli Bean Sauce<span id="price">&pound;7.00</span></li>
-                <li class="dish-name">Chicken & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
-                <li class="dish-name">Beef & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
-                <li class="dish-name">Char Siu & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
-                <li class="dish-name">Prawns & Chilli Bean Sauce<span id="price">&pound;6.80</span></li>
-              </ul>
+            <div id="mushroom-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Mushroom Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Chicken & English Mushrooms</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns & English Mushrooms</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu Pork & English Mushrooms</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & English Mushrooms</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & English Mushrooms</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns, Chicken & English Mushrooms</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef, Chicken & English Mushrooms</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Char Siu Mushrooms</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="chilli-bean-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Hot Chilli Bean Sauce Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special with Chilli Bean Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Chilli Bean Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns, Chicken & Chilli Bean Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken, Char Siu & Chilli Bean Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Chilli Bean Sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Chilli Bean Sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu & Chilli Bean Sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns & Chilli Bean Sauce</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="cashew-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Cashew Nut Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special & Cashew Nuts</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Cashew Nuts</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns, Chicken & Cashew Nuts</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken, Char Siu & Cashew Nuts</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu & Cashew Nuts</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Cashew Nuts</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns & Cashew Nuts</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Vegetables & Cashew Nuts</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="pineapple-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Pineapple Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">King Prawns, Chicken & Pineapple, Ginger</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Pineapple, Ginger</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Pineapple, Ginger</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns, Chicken & Pineapple</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Pineapple</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Pineapple</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Pineapple</span><span class="price">&pound;6.50</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="tomato-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Tomato Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Chicken & Tomato</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Tomato</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Tomato</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns, Chicken & Tomato</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef, Chicken & Tomato</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="oyster-sauce-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Oyster Sauce Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Chicken, Oyster Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Bean Sprouts, Oyster Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Bean Sprouts, Oyster Sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Bean Sprouts, Oyster Sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu & Bean Sprouts, Oyster Sauce</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="chilli-bean-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Hot & Spicy Satay Sauce Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special & Satay Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Satay Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns, Chicken & Satay Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef, Chicken & Satay Sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Satay Sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns & Cashew Nuts</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Cashew Nuts</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu & Satay Sauce</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="duck-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Roast Duck Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Roast Duck with Peking Sauce</span><span class="price">&pound;7.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Roast Duck with Black Bean Sauce</span><span class="price">&pound;7.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Roast Duck with Chilli Sauce</span><span class="price">&pound;7.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Roast Duck with Cashew Nuts</span><span class="price">&pound;7.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Roast Duck with Pineapple</span><span class="price">&pound;7.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Roast Duck with Satay Sauce</span><span class="price">&pound;7.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Roast Duck with Oyster Sauce</span><span class="price">&pound;7.20</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="sweet-sour-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Sweet & Sour Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Sweet & Sour King Prawns</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Sweet & Sour Chicken</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Sweet & Sour King Prawns & Chicken</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Lemon Sauce</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="fried-rice-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Egg Fried Rice Dishes</h3>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Chicken Egg Fried Rice</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef Egg Fried Rice</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu Fried Rice</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Special Egg Fried Rice</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns Egg Fried Rice</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Young Chow Egg Fried Rice</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns Egg Fried Rice</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Hot & Spicy Chicken Egg Fried Rice</span><span class="price">&pound;6.50</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="chop-suey-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Chop Suey Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special Chop Suey</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Chicken Chop Suey</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Chicken Chop Suey</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns Chop Suey</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns Chop Suey</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu Chop Suey</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef Chop Suey</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken Chop Suey</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Mushroom Chop Suey</span><span class="price">&pound;5.00</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="curry-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Curry Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Curried Special</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried King Prawns & Chicken</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried King Prawns</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Beef & Chicken</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Chicken & Char Siu</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Chicken Breast</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Beef & Mushrooms</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Chicken & Mushrooms</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Chicken</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Prawns</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Beef</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Mixed Vegetables</span><span class="price">&pound;5.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Mushroom</span><span class="price">&pound;5.00</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="chow-mein-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Chow Mein Dishes</h3>
+                <p>(No Rice Included)</p>
+                <p>(Fried Soft Noodles with Mixed Vegs.)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special Chow Mein</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawn Chow Mein</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Chicken Chow Mein</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Chicken Chow Mein</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu & King Prawn Chow Mein</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Singapore Style Chow Mein (Hot & Spicy)</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns Chow Mein</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu Pork Chow Mein</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken Chow Mein</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef Chow Mein</span><span class="price">&pound;6.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Mushroom Chow Mein</span><span class="price">&pound;4.70</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="foo-young-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Foo Young Dishes</h3>
+                <p>(Egg Chinese Style)</p>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special Foo Young</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Chicken Foo Young</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns Foo Young</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken Foo Young</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns Foo Young</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu Foo Young</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Mushroom Foo Young</span><span class="price">&pound;6.00</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="english-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>English Meals</h3>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">King Prawn Omelette, Chips</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken Omelette, Chips</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawns Omelette, Chips</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Ham Omelette, Chips</span><span class="price">&pound;6.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Mushroom Omelette, Chips</span><span class="price">&pound;6.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Roast Chicken Breast, Chips</span><span class="price">&pound;5.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Sausage (4), Gravy & Onion, Mushrooms, Chips</span><span class="price">&pound;4.00</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="foo-young-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Green Pepper & Black Bean Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special with Pepper & Black Bean sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns Pepper & Black Bean sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawns & Chicken & Black Bean sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef, Chicken with Pepper & Black Bean sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken with Pepper & Black Bean sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawn with Pepper & Black Bean sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef with Pepper & Black Bean sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu with Pepper & Black Bean sauce</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="foo-young-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Green Pepper & Chilli Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special with Green Pepper & Chilli sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawn, Green Pepper & Chilli sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawn & Chicken & Chilli sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef, Chicken & Chilli sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken with Green Pepper & Chilli sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawn with Green Pepper & Chilli sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef with Green Pepper & Chilli sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu with Green Pepper & Chilli sauce</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="peking-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Peking Sauce Dishes</h3>
+                <p>Including Boiled Rice (Egg Fried Rice 50p Extra)</p>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Special with Peking sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawn & Peking sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">King Prawn & Chicken & Peking sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Char Siu Peking sauce</span><span class="price">&pound;7.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chicken & Peking sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Beef & Peking sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawn & Peking sauce</span><span class="price">&pound;6.80</span></li>
+                  <li class="dish-name"><span class="dish-item">Char Siu & Peking sauce</span><span class="price">&pound;6.80</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="extra-dish" class="col-12 col-md-6 mt-3 mb-3">
+              <div class="dish-container">
+                <h3>Extra Portions</h3>
+                <ul>
+                  <li class="dish-name"><span class="dish-item">Chow Mein</span><span class="price">&pound;3.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Egg Fried Rice</span><span class="price">&pound;2.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Onion Mushrooms</span><span class="price">&pound;2.20</span></li>
+                  <li class="dish-name"><span class="dish-item">Mixed Veg</span><span class="price">&pound;2.70</span></li>
+                  <li class="dish-name"><span class="dish-item">Bean Sprouts</span><span class="price">&pound;2.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Curry & Chips</span><span class="price">&pound;2.70</span></li>
+                  <li class="dish-name"><span class="dish-item">Gravy & Chips</span><span class="price">&pound;2.30</span></li>
+                  <li class="dish-name"><span class="dish-item">Boiled Rice</span><span class="price">&pound;1.60</span></li>
+                  <li class="dish-name"><span class="dish-item">Fried Onion</span><span class="price">&pound;1.60</span></li>
+                  <li class="dish-name"><span class="dish-item">Prawn Crackers</span><span class="price">&pound;1.60</span></li>
+                  <li class="dish-name"><span class="dish-item">Curried Sauce</span><span class="price">&pound;1.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Sweet & Sour Sauce</span><span class="price">&pound;1.50</span></li>
+                  <li class="dish-name"><span class="dish-item">Gravy Sauce</span><span class="price">&pound;1.00</span></li>
+                  <li class="dish-name"><span class="dish-item">Chips</span><span class="price">&pound;1.60</span></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    
+    <!-- Footer -->
+    <footer class="footer-style page-footer font-small pt-3 pb-3">
+      <div class="container text-md-left">
+        <div class="row row-ftr">
+          <div class="col-md-8">
+            <h2 class="footer-title">Ken's Sunrise Takeaway</h2>
+            <ul class="list-unstyled mt-4">
+              <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#about-us"><i class="icon-style fas fa-bars"></i>Menu</a></li>
+              <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link"  href="#credits"><i class="icon-style fas fa-phone-alt"></i>Phone</a></li>
+              <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#awards"><i class="icon-style far fa-clock"></i>Opening Hours</a></li>
+            </ul>
+          </div>    
+        </div>
+      </div>
+    </footer>
+    <!-- /. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
