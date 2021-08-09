@@ -24,7 +24,7 @@ h1 {
   color: #a5243d;
 }
 #hero-title{
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.9);
   padding:10px;
 }
 h3 {
@@ -92,8 +92,33 @@ a.ftr-underline-animation.ftr-link {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
+
+.phone{
+  background-color:rgb(165, 36, 61, 0.9);
+  padding:20px;
+  border-radius:5px;
+  width:45%;
+  color: #edebd7;
+  font-size:1.5rem;
+  text-align:center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.phone:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.phone-link, .phone-link:hover {
+  color: #edebd7;
+}
+.alergy-notice{
+  border: 3px solid #a5243d;
+  padding:20px;
+}
 @media only screen and (max-width:767px) {
   .hero-img{
     height: 300px; 
+  }
+  .phone {
+    width: 100%;
   }
 }
