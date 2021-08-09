@@ -151,6 +151,9 @@ a.ftr-underline-animation.ftr-link {
   display: block;
   margin:15px 0px;
 }
+.small-ftr{
+  font-size:0.75rem;
+}
 @media only screen and (max-width:767px) {
   .hero-img{
     height: 300px; 
